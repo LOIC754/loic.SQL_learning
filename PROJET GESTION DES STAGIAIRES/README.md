@@ -19,22 +19,6 @@ L’objectif de ce repo est de construire des bases solides en SQL pour le data 
 - les window functions
 - des cas pratiques inspirés du métier de data engineer
 
-Ce dépôt est donc à la fois :
-
-- un espace d’apprentissage
-- un historique de progression
-- un portfolio technique
-
----
-
-## Stack utilisée
-
-- **PostgreSQL** : système de gestion de base de données relationnelle
-- **VS Code** : éditeur principal pour écrire et organiser les requêtes SQL
-- **Git & GitHub** : versionnement, suivi de progression et publication du travail
-
----
-
 ## Structure du repository
 
 1. Requêtes de base : SELECT, WHERE, ORDER BY
