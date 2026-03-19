@@ -37,46 +37,22 @@ Ce dépôt est donc à la fois :
 
 ## Structure du repository
 
-```text
-sql-data-engineering/
-│
-├── README.md
-├── 00_setup/
-│   ├── install_notes.md
-│   ├── create_database.sql
-│   └── create_tables.sql
-│
-├── 01_select_where/
-│   ├── exo_01.sql
-│   ├── exo_02.sql
-│   └── notes.md
-│
-├── 02_group_by/
-│   ├── exo_01.sql
-│   ├── exo_02.sql
-│   └── notes.md
-│
-├── 03_joins/
-│   ├── exo_01.sql
-│   ├── exo_02.sql
-│   └── notes.md
-│
-├── 04_cte_subqueries/
-│   ├── exo_01.sql
-│   ├── exo_02.sql
-│   └── notes.md
-│
-├── 05_data_cleaning/
-│   ├── exo_01.sql
-│   ├── exo_02.sql
-│   └── notes.md
-│
-├── 06_window_functions/
-│   ├── exo_01.sql
-│   ├── exo_02.sql
-│   └── notes.md
-│
-└── datasets/
-    ├── customers.csv
-    ├── orders.csv
-    └── products.csv
+1. Requêtes de base : SELECT, WHERE, ORDER BY
+
+2. Jointures : INNER JOIN, LEFT JOIN
+
+3. Agrégations : COUNT, SUM, AVG, GROUP BY, HAVING
+
+4. Nettoyage de données : NULL, CASE, COALESCE, CAST
+
+5. CTE et sous-requêtes
+
+6. Fonctions de fenêtre
+
+7. Création/modélisation des tables
+
+8. Dates et heures
+
+9. Index et optimisation
+
+10. SQL appliqué au data engineering : staging, faits, dimensions, pipelines
