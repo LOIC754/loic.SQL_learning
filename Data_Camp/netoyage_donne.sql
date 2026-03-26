@@ -44,3 +44,41 @@ FROM
     END AS morning 
 FROM 
 	parking_violation;
+
+----------------------------------------------
+-------------------------------------
+---------------------------------------
+------------------------------------------
+--Exemple 2 : utilisation de l'instruction ROW_NUMBER
+--Cette méthode fonctionne bien avec les bases de données prenant en charge les
+--fonctions analytiques (comme SQL Server, PostgreSQL, Oracle, etc.) :
+
+
+
+	DELETE FROM table_name 
+WHERE id NOT IN ( 
+                     SELECT id 
+                     FROM ( 
+                             SELECT id, ROW_NUMBER() OVER (PARTITION BY column1, column2, column3 ORDER BY id) AS row_num 
+                             FROM table_name 
+                    ) AS temp 
+                   WHERE row_num = 1 
+
+--------
+------
+-----
+UPDATE table_name SET column_name = 'default_value' WHERE column_name IS NULL;
+--2. Traitement des Valeurs Manquantes
+--Les valeurs manquantes (NULL) dans les jeux de données peuvent être problématiques, notamment lorsqu'il s'agit de calculs 
+--statistiques ou d'analyses. Il est donc essentiel de traiter ces valeurs en les remplaçant ou en les supprimant, selon les besoins.
+
+---8. Suppression des Données Inutiles
+
+ALTER TABLE table_name DROP COLUMN column_to_drop;
+
+
+---Création de Vues Propres
+CREATE VIEW clean_data AS SELECT column1, column2, column3 FROM table_name WHERE column1 IS NOT NULL;
+
+
+--Remplacement des valeurs NULL par une valeur par défaut :
