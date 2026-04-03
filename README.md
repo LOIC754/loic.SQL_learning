@@ -1,36 +1,44 @@
-# SQL pour le Data Engineering
+# 🗄️ DE-SQL-Fundamentals
 
-Bienvenue dans ce dépôt dédié à mon apprentissage de **SQL** dans l’objectif de devenir **Data Engineer**.
+Maîtrise des fondamentaux SQL — de la sélection simple à la modélisation de données.
 
-Ce repository me permet de documenter ma progression de manière structurée, avec des exercices pratiques, des notes de compréhension, et des mini-projets réalisés avec **PostgreSQL**, **VS Code** et **GitHub**.
+---
+# utilité
+- **Ingestion de données et Modélisation** : Créer des tables pour recevoir les données brutes et Concevoir les schémas Star, Snowflake, Data Vault
+- **Transformation ETL/ELT et Monitoring** : Nettoyer, filtrer, agréger les données dans le pipeline,Surveiller les pipelines et détecter les erreurs
+- **Data Quality et optimisation** : Vérifier les doublons, valeurs nulles, anomalies et Créer des index, partitionner les tables pour la performance
+- **Data Warehouse et reporting** : Alimenter et requêter Snowflake, BigQuery, Redshift et Préparer les données pour les Data Analysts
+
+
+## 📁 Projets
+
+| Projet | Description |
+|---|---|
+| `01-select-filters` | SELECT, WHERE, ORDER BY, LIMIT |
+| `02-joins` | INNER, LEFT, RIGHT, FULL JOIN |
+| `03-aggregations` | GROUP BY, COUNT, SUM, AVG |
+| `04-subqueries` | Sous-requêtes et requêtes imbriquées |
+| `05-window-functions` | ROW_NUMBER, RANK, PARTITION BY |
+| `06-data-modeling` | Créer et optimiser des schémas de tables |
 
 ---
 
-## Objectif du dépôt
+## 🧠 Compétences acquises
 
-L’objectif de ce repo est de construire des bases solides en SQL pour le data engineering, en travaillant progressivement sur :
-
-- la lecture et l’exploration de données
-- le filtrage et le tri
-- les agrégations
-- les jointures
-- les sous-requêtes et CTE
-- le nettoyage de données
-- les window functions
-- des cas pratiques inspirés du métier de data engineer
-
-Ce dépôt est donc à la fois :
-
-- un espace d’apprentissage
-- un historique de progression
-- un portfolio technique
+| Compétence | Ce que je sais faire | Valeur professionnelle |
+|---|---|---|
+| **Requêtes de base** | Filtrer, trier et limiter des données avec SELECT | Je sais interroger une base de données pour extraire des informations précises |
+| **Jointures** | Combiner plusieurs tables avec INNER, LEFT, RIGHT, FULL JOIN | Je sais relier des données provenant de sources différentes |
+| **Agrégations** | Calculer des statistiques avec GROUP BY, COUNT, SUM, AVG | Je sais produire des indicateurs et des métriques métier |
+| **Sous-requêtes** | Imbriquer des requêtes pour des analyses complexes | Je sais résoudre des problèmes analytiques avancés en SQL |
+| **Window Functions** | Utiliser ROW_NUMBER, RANK, PARTITION BY | Je maîtrise les fonctions analytiques utilisées en production |
+| **Modélisation** | Concevoir et optimiser des schémas de tables | Je sais structurer une base de données pour la performance |
 
 ---
 
-## Stack utilisée
+## 🛠️ Stack technique
 
-- **PostgreSQL** : système de gestion de base de données relationnelle
-- **VS Code** : éditeur principal pour écrire et organiser les requêtes SQL
-- **Git & GitHub** : versionnement, suivi de progression et publication du travail
-
-
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=flat&logo=sqlite&logoColor=white)
+![DBeaver](https://img.shields.io/badge/DBeaver-372923?style=flat&logo=dbeaver&logoColor=white)
